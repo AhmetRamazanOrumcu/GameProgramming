@@ -40,11 +40,11 @@ public class HealthBar : MonoBehaviour
         }
     }
 
-    private void takeDamage(float damage)
+    public void takeDamage(float damage)
     {
         health -= damage;
     }
-    private void takeHeal(float heal)
+    public void takeHeal(float heal)
     {
         health += heal;
     }
