@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -26,6 +27,15 @@ public class Player : MonoBehaviour
         {
             gameDirector.healthBar.takeHeal(50);
         }
+
+        if (other.CompareTag("GateDesert"))
+        {
+            print("triggerlandýn");
+            SceneManager.LoadScene("Desert");
+        }
+
     }
+    
+
 
 }

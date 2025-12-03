@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -40,8 +40,8 @@ public class Inventory : MonoBehaviour
             bool aktifMi = inventoryPanel.activeSelf;
             inventoryPanel.SetActive(!aktifMi);
 
-            if (!aktifMi) // Panel a��l�yorsa
-                Instance.ListItems(); // UI ��elerini listele
+            if (!aktifMi) // Panel açılıyorsa
+                Instance.ListItems(); // UI öğelerini listele
         }
     }
 
@@ -49,6 +49,22 @@ public class Inventory : MonoBehaviour
 
     public void ListItems()
     {
+        //foreach (var item in Items)
+        //{
+        //    GameObject obj = Instantiate(InventoryItem, ItemContent);
+        //    var itemName = obj.transform.Find("ItemName").GetComponent<TMP_Text>();
+        //    var itemIcon = obj.transform.Find("ItemIcon").GetComponent<Image>();
+
+        //    itemName.text = item.itemName;
+        //    itemIcon.sprite = item.icon;
+        //}
+        // 1️⃣ Önce eski UI öğelerini temizle
+        foreach (Transform child in ItemContent)
+        {
+            Destroy(child.gameObject);
+        }
+
+        // 2️⃣ Sonra güncel Items listesini ekle
         foreach (var item in Items)
         {
             GameObject obj = Instantiate(InventoryItem, ItemContent);
@@ -57,6 +73,7 @@ public class Inventory : MonoBehaviour
 
             itemName.text = item.itemName;
             itemIcon.sprite = item.icon;
+
         }
     }
 }
