@@ -4,7 +4,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController1 : MonoBehaviour
 {
     [Header("Movement Settings")]
     public float walkSpeed = 2f;

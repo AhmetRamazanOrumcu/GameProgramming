@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Heal
   - GateDesert
+  - Tufek
+  - Tabanca
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - Ground
   - 
   - 
   - 
