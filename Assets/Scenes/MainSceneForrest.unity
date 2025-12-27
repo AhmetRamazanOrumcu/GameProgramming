@@ -10259,7 +10259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 487959942035796287, guid: 5571cef302d47df469d26e395361bf9c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1283018590371736037, guid: 5571cef302d47df469d26e395361bf9c, type: 3}
       propertyPath: gameDirector
@@ -11951,6 +11951,7 @@ GameObject:
   - component: {fileID: 1309362355}
   - component: {fileID: 1309362363}
   - component: {fileID: 1309362364}
+  - component: {fileID: 1309362365}
   m_Layer: 0
   m_Name: GiantEnemy (3)
   m_TagString: Enemy
@@ -16981,6 +16982,20 @@ MonoBehaviour:
   attackRange: 2
   timeBetweenAttacks: 1.5
   AlanGirmeSes: {fileID: 1309362355}
+--- !u!114 &1309362365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309362354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1765cc8542c7634d83c8238166161fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  plasmaExplosionEffect: {fileID: 1000011128802252, guid: a212ec589d81f154aa7e55d61cbcd36f, type: 3}
 --- !u!4 &1324508662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 448950, guid: 76d0990ce6d878544bdb1bc9f388dbce, type: 3}
@@ -17318,6 +17333,7 @@ GameObject:
   - component: {fileID: 1362938135}
   - component: {fileID: 1362938134}
   - component: {fileID: 1362938142}
+  - component: {fileID: 1362938143}
   m_Layer: 0
   m_Name: GiantEnemy (2)
   m_TagString: Enemy
@@ -22348,6 +22364,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aktifEdilecekScript: {fileID: 1362938137}
+--- !u!114 &1362938143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362938133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1765cc8542c7634d83c8238166161fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  plasmaExplosionEffect: {fileID: 1000011128802252, guid: a212ec589d81f154aa7e55d61cbcd36f, type: 3}
 --- !u!1 &1364461320
 GameObject:
   m_ObjectHideFlags: 0
@@ -27666,6 +27696,7 @@ GameObject:
   - component: {fileID: 1879033472}
   - component: {fileID: 1879033471}
   - component: {fileID: 1879033479}
+  - component: {fileID: 1879033480}
   m_Layer: 0
   m_Name: GiantEnemy (1)
   m_TagString: Enemy
@@ -32696,6 +32727,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aktifEdilecekScript: {fileID: 1879033474}
+--- !u!114 &1879033480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879033470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1765cc8542c7634d83c8238166161fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  plasmaExplosionEffect: {fileID: 1000011128802252, guid: a212ec589d81f154aa7e55d61cbcd36f, type: 3}
 --- !u!4 &1880927087 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 448950, guid: 76d0990ce6d878544bdb1bc9f388dbce, type: 3}
@@ -47410,7 +47455,7 @@ Transform:
   m_GameObject: {fileID: 6648985042201238561}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2360992, y: -1.3372412, z: -5.6308365}
+  m_LocalPosition: {x: -1.2360992, y: -1.3372412, z: -8.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -48748,6 +48793,7 @@ GameObject:
   - component: {fileID: 8727932678744871671}
   - component: {fileID: 7024324636509664044}
   - component: {fileID: 8727932678744871672}
+  - component: {fileID: 8727932678744871673}
   m_Layer: 0
   m_Name: GiantEnemy (4)
   m_TagString: Enemy
@@ -48772,6 +48818,7 @@ GameObject:
   - component: {fileID: 8727932679076997759}
   - component: {fileID: 1473022723}
   - component: {fileID: 8727932679076997760}
+  - component: {fileID: 8727932679076997761}
   m_Layer: 0
   m_Name: GiantEnemy
   m_TagString: Enemy
@@ -50291,6 +50338,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aktifEdilecekScript: {fileID: 8727932678744871672}
+--- !u!114 &8727932678744871673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6648985042201238561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1765cc8542c7634d83c8238166161fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  plasmaExplosionEffect: {fileID: 1000011128802252, guid: a212ec589d81f154aa7e55d61cbcd36f, type: 3}
 --- !u!199 &8727932679076997759
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -50381,6 +50442,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aktifEdilecekScript: {fileID: 2631978232170315671}
+--- !u!114 &8727932679076997761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6648985043030942889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1765cc8542c7634d83c8238166161fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  plasmaExplosionEffect: {fileID: 1000011128802252, guid: a212ec589d81f154aa7e55d61cbcd36f, type: 3}
 --- !u!33 &8762876278317080866
 MeshFilter:
   m_ObjectHideFlags: 0
